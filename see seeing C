@@ -1,0 +1,55 @@
+//For better readability, kindly turn on the softwrap above (right corner).
+
+What is C?
+
+C is a general-purpose, procedural, high-level programming language used in the development of computer software and applications, system programming, games, web development, and more. C language was developed by Dennis M. Ritchie at the Bell Telephone Laboratories in 1972. It is a powerful and flexible language which was first developed for the programming of the UNIX operating System. C is one of the most widely used programming language.
+
+C programming language is known for its simplicity and efficiency. It is the best choice to start with programming as it gives you a foundational understanding of programming.
+
+
+
+
+      //Why Learn C?//
+
+C programming language is one of the most popular programming language. It is a must learn for software engineering students. C is called the mother of all modern programming languages so learning C will help you to learn other languages easily like Java, C++, C#, Python, etc. C language is faster than other programming languages like Java and Python. It can handle low-level programming and we can compile the C code in a variety of computer platforms.
+
+List of some key advantages of C language:
+
+    Easy to learn.
+    Versatile Language, which can be used in both applications and technologies.
+    Mid-Level Programming Language.
+    Structured Programming Language.
+
+
+    
+
+          //Features of C Language//
+
+There are some key features of C language that show the ability and power of C language:
+
+    Simplicity and Efficiency: The simple syntax and structured approach make the C language easy to learn.
+    Fast Speed: C is one of the fastest programming language because C is a static programming language, which is faster than dynamic languages like Java and Python. C is also a compiler-based which is the reason for faster code compilation and execution.
+    Portable: C provides the feature that you write code once and run it anywhere on any computer. It shows the machine-independent nature of the C language.
+    Memory Management: C provides lower level memory management using pointers and functions like realloc(), free(), etc.
+    Pointers: C comes with pointers. Through pointers, we can directly access or interact with the memory. We can initialize a pointer as an array, variables, etc.
+    Structured Language: C provides the features of structural programming that allows you to code into different parts using functions which can be stored as libraries for reusability.
+
+
+
+
+          // Applications of C Language//
+
+C was used in programs that were used in making operating systems. C was known as a system development language because the code written in C runs as fast as the code written in assembly language.
+
+The use of C is given below:
+
+    Operating Systems
+    Language Compilers
+    Assemblers
+    Text Editors
+    Print Spoolers
+    Network Drivers
+    Modern Programs
+    Databases
+    Language Interpreters
+    Utilities
