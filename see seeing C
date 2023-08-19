@@ -53,3 +53,78 @@ The use of C is given below:
     Databases
     Language Interpreters
     Utilities
+
+
+
+                  //behind the scenes of C
+
+The compilation is the process of converting the source code of the C language into machine code. As C is a mid-level language, it needs a compiler to convert it into an executable code so that the program can be run on our machine.
+
+The C program goes through the following phases during compilation:
+
+1)source file
+2)preprocessor
+3)compiler 
+4)assembler 
+5)linker
+
+// What goes inside the compilation process?
+
+A compiler converts a C program into an executable. There are four phases for a C program to become an executable: 
+
+   1) Pre-processing
+
+1. Pre-processing
+
+This is the first phase through which source code is passed. This phase includes:
+
+    Removal of Comments
+    Expansion of Macros
+    Expansion of the included files.
+    Conditional compilation
+
+The preprocessed output is stored in the filename.i. Let’s see what’s inside filename.i: using $vi filename.i 
+
+In the above output, the source file is filled with lots and lots of info, but in the end, our code is preserved. 
+
+    printf contains now a + b rather than add(a, b) that’s because macros have expanded.
+    Comments are stripped off.
+    #include<stdio.h> is missing instead we see lots of code. So header files have been expanded and included in our source file.
+
+    2) Compilation
+The next step is to compile filename.i and produce an; intermediate compiled output file filename.s. This file is in assembly-level instructions. Let’s see through this file using $nano filename.s  terminal command.
+
+    3)Assembly
+In this phase the filename.s is taken as input and turned into filename.o by the assembler. This file contains machine-level instructions. At this phase, only existing code is converted into machine language, and the function calls like printf() are not resolved. Let’s view this file using $vi filename.o 
+
+    4)Linking
+This is the final phase in which all the linking of function calls with their definitions is done. Linker knows where all these functions are implemented. Linker does some extra work also, it adds some extra code to our program which is required when the program starts and ends. For example, there is a code that is required for setting up the environment like passing command line arguments. This task can be easily verified by using $size filename.o and $size filename. Through these commands, we know how the output file increases from an object file to an executable file. This is because of the extra code that Linker adds to our program. 
+
+//comments in C :
+The comments in C are human-readable explanations or notes in the source code of a C program.  A comment makes the program easier to read and understand. These are the statements that are not executed by the compiler or an interpreter.
+
+It is considered to be a good practice to document our code using comments.
+When and Why to use Comments in C programming?
+
+    A person reading a large code will be bemused if comments are not provided about details of the program.
+    C Comments are a way to make a code more readable by providing more descriptions.
+    C Comments can include a description of an algorithm to make code understandable.
+    C Comments can be used to prevent the execution of some parts of the code.
+
+Types of comments in C
+
+In C there are two types of comments in C language:
+
+    Single-line comment:
+1. Single-line Comment in C
+
+A single-line comment in C starts with ( // ) double forward slash. It extends till the end of the line and we don’t need to specify its end.
+Syntax of Single Line C Comment (//this is a comment).
+
+    Multi-line comment:2. Multi-line Comment in C
+
+The Multi-line comment in C starts with a forward slash and asterisk ( /* ) and ends with an asterisk and forward slash ( */ ). Any text between /* and */ is treated as a comment and is ignored by the compiler.
+
+It can apply comments to multiple lines in the program.
+Syntax of Multi-Line C Comment /* this is .......comment*/
+
