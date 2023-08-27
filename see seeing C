@@ -128,3 +128,43 @@ The Multi-line comment in C starts with a forward slash and asterisk ( /* ) and 
 It can apply comments to multiple lines in the program.
 Syntax of Multi-Line C Comment /* this is .......comment*/
 
+
+
+                  Program for reversing a number :
+
+//prerequisite : you need to have some background knowledge of place values.
+#include<stdio.h>
+
+int main (){
+ 
+    int n,d1,d2,d3,d4,d5,reverse ;
+    
+    printf("Enter the five digit munber : ");
+    scanf("%d", &n);
+     
+     d1 = n % 10; //by this we are getting the last digit of number as remainder.
+     n = n/10; //here we are reducing the original number by one digit.
+     
+      d2 = n % 10;
+     n = n/10;
+     
+      d3 = n % 10;
+     n = n/10;
+     
+      d4 = n % 10;
+     n = n/10;
+     
+     
+      d5 = n % 10;
+       
+       
+       reverse= d1 * 10000 + d2 * 1000 + d3 * 100 + d4 * 10 + d5;
+       
+       printf("Reversed five digit number is %d" , reverse);
+       
+
+
+    return 0;
+    
+}
+
